@@ -27,12 +27,14 @@ var oauth = {
     }
 };
 
-Passport.serializeUser(function(user, done) {
-    done(null, user);
+Passport.serializeUser(function (user, done) {
+    done(null, user.id);
 });
 
-Passport.deserializeUser(function(user, done) {
-    done(null, user);
+Passport.deserializeUser(function (id, done) {
+    User.findById(id, function (err, user) {
+        done(err, user);
+    });
 });
 
 var TestLegendsStrategy = (function(){

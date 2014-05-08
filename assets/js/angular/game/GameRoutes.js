@@ -10,12 +10,12 @@ define(['angular', 'angularRoute'], function(angular) {
 
 	return angular.module('Game.routes', ['ngRoute'])
 
-		.config(['$routeProvider', function($routeProvider) {
+		.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 			$routeProvider.when('/games', {
 				templateUrl: 'js/angular/game/partials/index.html',
 				controller: 'GameController'
 			});
 
-			//$locationProvider.html5Mode(true);
+			$locationProvider.html5Mode(true);
 		}]);
 });

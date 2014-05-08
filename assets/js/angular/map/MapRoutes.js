@@ -10,7 +10,7 @@ define(['angular', 'angularRoute'], function(angular) {
 
     return angular.module('Map.routes', ['ngRoute'])
 
-        .config(['$routeProvider', function($routeProvider) {
+        .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
             $routeProvider.when('/map', {
                 templateUrl: 'js/angular/map/partials/index.html',
                 controller: 'MapController'
@@ -18,6 +18,6 @@ define(['angular', 'angularRoute'], function(angular) {
 
             $routeProvider.otherwise({redirectTo: '/map'});
 
-            //$locationProvider.html5Mode(true);
+            $locationProvider.html5Mode(true);
         }]);
 });

@@ -10,12 +10,12 @@ define(['angular', 'angularRoute'], function(angular) {
 
     return angular.module('World.routes', ['ngRoute'])
 
-        .config(['$routeProvider', function($routeProvider) {
+        .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
             $routeProvider.when('/world', {
                 templateUrl: 'js/angular/world/partials/index.html',
                 controller: 'WorldController'
             });
 
-            //$locationProvider.html5Mode(true);
+            $locationProvider.html5Mode(true);
         }]);
 });
