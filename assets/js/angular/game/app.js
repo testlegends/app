@@ -8,8 +8,6 @@
 define([
 	'angular',
 	'angularLoadingBar',
-	'common/directives',
-	'common/filters',
     'game/GameService',
 	'game/GameController',
     'game/GameRoutes'
@@ -18,8 +16,6 @@ define([
 
 	return angular.module('Game', [
 		'chieffancypants.loadingBar',
-		'Common.directives',
-		'Common.filters',
 		'Game.services',
 		'Game.controllers',
         'Game.routes'
