@@ -24,6 +24,10 @@
     "jquery": "~2.1.0",
     "toastr": "~2.0.1",
     "underscore": "~1.6.0",
-    "requirejs": "~2.1.11"
+    "requirejs": "~2.1.11",
+    "easeljs": "*",
+    "TweenJS": "*",
+    "PreloadJS": "*",
+    "SoundJS": "*"
   }
 }

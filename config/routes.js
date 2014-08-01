@@ -10,13 +10,11 @@
 
 module.exports.routes = {
 
-    '/':      'HomeController.index',
-    '/map':   'HomeController.index',
-    '/games': 'HomeController.index',
-    '/world': 'HomeController.index',
+    '/'         : 'HomeController.index',
+    '/game/:id' : 'HomeController.index',
 
-    '/oauth':          'HomeController.tl_oauth_request',
+    '/oauth'         : 'HomeController.tl_oauth_request',
     '/oauth/callback': 'HomeController.tl_oauth_callback',
-    '/oauth/logout':   'HomeController.tl_oauth_logout'
+    '/oauth/logout'  : 'HomeController.tl_oauth_logout'
 
 };

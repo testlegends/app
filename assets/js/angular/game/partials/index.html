@@ -1,1 +1,25 @@
-{{name}}
+<div ng-controller="GameController as g" id="canvas_container">
+    <canvas id="EpicGame" width="2272" height="1280"></canvas>
+    <button ng-click="restart()">Restart</button>
+</div>
+
+<style>
+    @font-face {
+        font-family: SHOWG;
+        src: url('/font/SHOWG.TTF');
+    }
+
+    #canvas_container {
+        width: 1136px;
+        height: 640px;
+        border: 1px solid black;
+        text-align:center;
+        margin-top:40px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #EpicGame {
+        width:100%;
+        height:100%;
+    }
+</style>

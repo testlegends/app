@@ -8,15 +8,13 @@
 define([
 	'angular',
 	'angularLoadingBar',
-    'game/GameService',
-	'game/GameController',
-    'game/GameRoutes'
+	'game/Controller',
+    'game/Routes'
 ], function (angular) {
 	'use strict';
 
 	return angular.module('Game', [
 		'chieffancypants.loadingBar',
-		'Game.services',
 		'Game.controllers',
         'Game.routes'
 	]);

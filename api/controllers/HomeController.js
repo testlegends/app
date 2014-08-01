@@ -7,15 +7,11 @@
  * @created     :: 2014/02/08
  */
 
-var Html = require('../helpers/HtmlHelper.js');
-
 module.exports = (function(){
-
-    var helpers = { Html: Html };
 
 	function index (req, res) {
 		return res.view({
-			Html: Html
+
 		});
 	}
 
