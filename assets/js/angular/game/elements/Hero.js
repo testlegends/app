@@ -9,8 +9,8 @@ define([
     'game/elements',
     'game/elements/StatusBar',
     'game/services/Global',
-    'game/services/Trackr',
     'game/constants/Events',
+    'common/services/Trackr',
     'easeljs',
     'tweenjs'
 ], function (gameElements) {

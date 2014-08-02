@@ -9,6 +9,7 @@ require.config({
     paths: {
         angular: '../vendor/angular/angular',
         angularRoute: '../vendor/angular-route/angular-route',
+        angularCookies: '../vendor/angular-cookies/angular-cookies',
         angularLoadingBar: '../vendor/angular-loading-bar/build/loading-bar',
 
         underscore: '../vendor/underscore/underscore',

@@ -28,6 +28,7 @@
     "easeljs": "*",
     "TweenJS": "*",
     "PreloadJS": "*",
-    "SoundJS": "*"
+    "SoundJS": "*",
+    "angular-cookies": "~1.2.21"
   }
 }

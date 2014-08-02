@@ -7,11 +7,24 @@
  * @created     :: 2014/02/08
  */
 
+var request = require('request');
+
 module.exports = (function(){
 
 	function index (req, res) {
-		return res.view({
+		request({
+			uri: process.env.TESTLEGENDS_OAUTH_SERVER_URL + '/oauth/token',
+			method: 'POST',
+			form: {
+				grant_type: 'client_credentials',
+				client_id: process.env.TESTLEGENDS_API_CLIENT_ID,
+				client_secret: process.env.TESTLEGENDS_API_CLIENT_SECRET
+			}
+		}, function (err, response) {
+			var thirtyMinutes = 30 * 60 * 1000;
+			res.cookie('app_access_token', JSON.parse(response.body).access_token, { maxAge: thirtyMinutes });
 
+			return res.view();
 		});
 	}
 

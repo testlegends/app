@@ -21,7 +21,10 @@ define([
 
 			$scope.init = function () {
 				Global.canvas = document.getElementById('EpicGame');
-				Global.game.Main = new Main();
+				Global.getGameData(function (err, data) {
+					Global.game.questions = data;
+					Global.game.Main = new Main();
+				});
 			};
 
 			$scope.restart = function () {

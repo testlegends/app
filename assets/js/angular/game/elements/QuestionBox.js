@@ -51,10 +51,9 @@ define([
           p.render_next_question = function () {
 
             // user win
-            if(this.question_list.length===0){
+            if (this.question_list.length === 0) {
               Global.game.main.win_handler();
-            }
-            else{
+            } else {
               var next_q = this.question_list.pop();
 
 

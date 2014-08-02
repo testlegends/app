@@ -20,6 +20,7 @@
     "nodetime": "^0.8.15",
     "passport": "^0.2.0",
     "passport-oauth": "^1.0.0",
+    "request": "^2.39.0",
     "gulp": "^3.8.1",
     "gulp-concat": "^2.3.4",
     "gulp-cssmin": "^0.1.6",

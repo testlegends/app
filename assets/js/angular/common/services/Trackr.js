@@ -5,10 +5,10 @@
  * @created     :: 2014/07/20
  */
 
-define(['game/services'], function (gameServices) {
+define(['common/services'], function (commonServices) {
     'use strict';
 
-    return gameServices
+    return commonServices
 
         .factory('Trackr', ['$http', function ($http) {
             var appName = "TestLegends Home";
