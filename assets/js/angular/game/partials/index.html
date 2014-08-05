@@ -1,25 +1,23 @@
 <div id="canvas_container">
     <canvas id="EpicGame" width="2272" height="1280"></canvas>
-    <button ng-click="restart()">Restart</button>
 </div>
 
 <style>
-    @font-face {
-        font-family: SHOWG;
-        src: url('/font/SHOWG.TTF');
-    }
-
     #canvas_container {
-        width: 1136px;
-        height: 640px;
-        border: 1px solid black;
-        text-align:center;
-        margin-top:40px;
-        margin-left:auto;
-        margin-right:auto;
+        width: 1200px;
+        height: 100%;
+        text-align: center;
+        margin: 40px auto;
+        padding: 80px 140px;
+        background: url('/images/ipad_frame.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 1228px 801px;
     }
     #EpicGame {
-        width:100%;
-        height:100%;
+        width: 960px;
+        height: 607px;
+        margin-left: -45px;
+        margin-top: -1px;
     }
 </style>
