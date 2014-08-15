@@ -15,13 +15,13 @@ define([
 
         .factory('Global', ['$routeParams', 'TestLegendsAPI', function ($routeParams, TestLegendsAPI) {
             return {
+                canvas: null,
+                stage: {},
                 game: {
                     assets: {},
                     monster_list: [],
                     scale_idx: 1
                 },
-                stage: {},
-                canvas: null,
 
                 //TODO: Should put this in Question Service, but hard to solve the async problem
                 getGameData: function (cb) {

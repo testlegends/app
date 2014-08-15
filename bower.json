@@ -8,7 +8,7 @@
   "description": "Game App for TestLegends",
   "main": "app.js",
   "license": "MIT",
-  "homepage": "http://app.testlegends.com",
+  "homepage": "https://app.testlegends.com",
   "private": true,
   "ignore": [
     "**/.*",

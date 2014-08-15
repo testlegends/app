@@ -21,6 +21,10 @@ module.exports = (function(){
 				client_secret: process.env.TESTLEGENDS_API_CLIENT_SECRET
 			}
 		}, function (err, response) {
+			if (err) {
+				console.log(err);
+			}
+
 			var thirtyMinutes = 30 * 60 * 1000;
 			res.cookie('app_access_token', JSON.parse(response.body).access_token, { maxAge: thirtyMinutes });
 
